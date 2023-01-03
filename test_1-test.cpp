@@ -25,6 +25,6 @@ int main()
         }
     }
     }
-    cout << "hi";
+    cout << "\nhi";
     return 0;
 }
