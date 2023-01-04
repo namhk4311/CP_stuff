@@ -3,15 +3,20 @@ using namespace std;
 
 int main()
 {
-    int n, lth;
-    string word, k;
-    cout << "Nhap: ";
-    getline(cin,word);
-    lth = word.length();
-    if (lth >= 10)
+    int lth,n;
+    string word;
+    cin >> n;
+    for (int i = 0; i < n; i++)
     {
-        string t = to_string(lth);
-        string k = word[0] + t + word[lth-1]; 
-        cout << k;
+        cin >> word;
+        lth = word.length();
+        if (lth <= 10)
+        {
+            cout << word << endl;
+        }
+        else 
+        {
+            cout << word[0] << lth - 2 << word[lth-1] << endl;
+        }
     }
-    return 0;
+}
