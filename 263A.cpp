@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+void pro1()
 {
     int b[50][50];
     for(int i = 0; i < 5; i++)
@@ -65,6 +65,29 @@ int main()
             }
         }
     }
+}
 
-    return 0;
+void pro2()
+{
+    int b[50][50];
+    for(int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            cin >> b[i][j];
+        }
+    }
+
+   for(int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            if (b[i][j] == 1)  cout << abs(i-2) + abs(j-2);
+        }
+    }
+}
+
+int main()
+{
+    pro2();
 }
