@@ -1,19 +1,40 @@
-#include <stdio.h>
+#include <bits/stdc++.h>
 using namespace std;
  
 typedef long long ll;
 typedef unsigned long int uli;
  
-void solve()
+void tamgiacwhile()
 {
-    
+    int outer = 1;
+    while (outer <= 10)
+    {
+        int inner = 1;
+        while (inner <= outer)
+        {
+            cout << inner << " ";
+            inner++;
+        }
+        outer++;
+        cout << endl;
+    }
+}
+void tamgiacfor()
+{
+    for(int i = 1; i < 10; i++)
+    {
+        for(int j = 1; j < i; j++)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
 }
 
 int main()
-{
-    printf("Hello world! \n");
-    int i;
-    scanf("%f",&i);
-    printf("so vua nhap la: %f", i);
+{   
+    tamgiacwhile();
+    cout << endl;
+    tamgiacfor();
     return 0;
 }
