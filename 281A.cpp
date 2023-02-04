@@ -1,7 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
  
-int main()
+typedef long long ll;
+typedef unsigned long int uli;
+ 
+void solve()
 {
     string s;
     cin >> s;
@@ -13,5 +16,11 @@ int main()
         }
     }
     cout << s;
+}
+
+int main()
+{
+    int test; cin >> test;
+    while (test--) solve();
     return 0;
 }
