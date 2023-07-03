@@ -1,11 +1,14 @@
 #include <bits/stdc++.h>
 #include <algorithm>
+//#define ONLINE_JUDGE
 using namespace std;
     
 int main()
 {
-    freopen("INP.txt","r",stdin);
-    freopen("OUT.txt","w",stdout);
+    #ifndef ONLINE_JUDGE
+        freopen("INP.txt","r",stdin);
+        freopen("OUT.txt","w",stdout);
+    #endif
     string s1, s2, s1_2, s3;
     cin >> s1 >> s2 >> s3;
     s1_2 = s1 + s2;
