@@ -18,9 +18,8 @@ void solve()
         for (int j = 0; j < 3; j++){
             v.insert(a[i][j]);
         }
-        if (v.size() == 1){
-            auto it = v.begin();
-            if (*it == '.') continue;
+        auto it = v.begin();
+        if (v.size() == 1 && *it != '.'){
             cout << *it << endl;
             return;
         }
@@ -30,9 +29,8 @@ void solve()
         for (int j = 0; j < 3; j++){
             h.insert(a[j][i]);
         }
-        if (h.size() == 1) {
-            auto it = h.begin();
-            if (*it == '.') continue;
+        auto it = h.begin();
+        if (h.size() == 1 && *it != '.') {
             cout << *it << endl;
             return;
         }
